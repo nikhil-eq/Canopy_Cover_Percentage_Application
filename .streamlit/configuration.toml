@@ -1,5 +1,5 @@
 [theme]
 baseColor = 'black'
-base = "dark"
+base = "light"
 borderColor = "mediumSlateBlue"
 showWidgetBorder = false
