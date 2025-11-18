@@ -19,6 +19,8 @@ from matplotlib.ticker import MaxNLocator
 
 st.sidebar.image("logo.png", use_column_width=True)
 
+st.sidebar.header('Restoring Earth’s Balance')
+
 st.title('☘ Canopy Cover Percentage Detection ☘')
 
 st.set_page_config(
@@ -245,6 +247,7 @@ if roi is not None:
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
 
 
