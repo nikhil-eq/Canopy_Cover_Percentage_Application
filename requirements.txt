@@ -1,0 +1,15 @@
+planetary-computer
+pystac-client
+rasterio
+rasterstats
+stackstac
+xarray
+rioxarray
+xarray-spatial
+pandas
+geopandas
+matplotlib
+numpy
+scipy
+streamlit
+datetime
