@@ -1,4 +1,3 @@
-import os
 import pystac_client
 import planetary_computer
 import rasterio
@@ -10,18 +9,13 @@ import xarray
 import xrspatial
 import stackstac
 import matplotlib.pyplot as plt
-import leafmap.foliumap as leafmap
-import localtileserver
 from rasterio.enums import Resampling
 import scipy.stats
 import rasterstats
 import streamlit as st
-import streamlit_folium
 from datetime import datetime
 from rasterstats import zonal_stats
 from matplotlib.ticker import MaxNLocator
-
-os.environ['LOCALTILESERVER_CLIENT_PREFIX'] = 'proxy/{port}'
 
 st.title('☘🌳🌴 Canopy Cover Percentage Detection ☘🌳🌴')
 
@@ -265,4 +259,5 @@ if roi != None:
         roi_reprojected
 
         download = download_geojson()
+
 
