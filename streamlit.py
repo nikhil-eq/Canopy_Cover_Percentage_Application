@@ -70,7 +70,7 @@ if roi is not None:
 
             startDate = st.date_input(
                 label= 'Select Start Date',
-                min_value = date(2017, 3, 28),
+                value = 'today',
                 format = 'YYYY-MM-DD'
             )
 
@@ -87,10 +87,10 @@ if roi is not None:
 
             if startDate > endDate:
                 st.error('End date must be after start date.')
-            else:
-        
-                @st.cache_data
-                def sentinel_extractor(cloud_cover = 20, proj_crs = str(crs)):
+                
+            elif startDate != endDate:
+                
+                    def sentinel_extractor(cloud_cover = 20, proj_crs = str(crs)):
 
                     st.badge('Searching Sentinel 2 Images for Selected Dates and Region')
 
@@ -247,4 +247,5 @@ if roi is not None:
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
