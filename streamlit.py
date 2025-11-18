@@ -226,8 +226,6 @@ if roi is not None:
                             ax.set_yticks([])
                             st.pyplot(fig)
 
-                        plot_rgb(stacked_data, 'RGB Composite')
-
                     with col2:
                         def plot_ndvi(ndvi_img):
                             fig, ax = plt.subplots(figsize=(8, 5))
@@ -240,13 +238,12 @@ if roi is not None:
                             plt.colorbar(im, ax=ax)
                             st.pyplot(fig)
 
-                        plot_ndvi(ndvi_data)
-
     except Exception as e:
         st.error(f'Error processing file: {str(e)}')
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
 
 
