@@ -1,5 +1,7 @@
 [theme]
-baseColor = 'black'
 base = "light"
-borderColor = "mediumSlateBlue"
-showWidgetBorder = false
+primaryColor = "#4B9CD3"
+backgroundColor = "#F0F6FF"        # Main page background
+secondaryBackgroundColor = "#E0ECFF"  
+textColor = "#000000"
+font = "sans serif"
