@@ -17,27 +17,7 @@ from datetime import datetime, date
 from rasterstats import zonal_stats
 from matplotlib.ticker import MaxNLocator
 
-import streamlit as st
-
-logo_url = 'https://github.com/nikhil-atharv/Canopy_Cover_Percentage_Application/blob/main/logo.png'
-
 st.sidebar.image("logo.png", use_column_width=True)
-
-st.markdown(
-    f"""
-    <style>
-        .logo {{
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 120px;
-        }}
-    </style>
-    <img src="{logo_url}" class="logo">
-    """,
-    unsafe_allow_html=True
-)
-
 
 st.title('☘ Canopy Cover Percentage Detection ☘')
 
@@ -50,13 +30,13 @@ st.set_page_config(
 
 st.write('This Web Application will help critical decision making process aiding in project areas acceptance or rejection based on canopy cover percentage (10%)')
 
-st.subheader(body = 'Steps for User',
+st.sidebar.subheader(body = 'Steps for User',
              divider = 'rainbow' )
 
-st.text('1. Upload Region of Interest (KML/GeoPackage/GeoJson)')
-st.text('2. Enter the EPSG Code for you ROI (e.g., EPSG:32644) - Only Projected CRS')
-st.text('2. Select the Date Range (Start Date and End Date))')
-st.text('3. Download your Final File (GeoJSON)')
+st.sidebar.text('1. Upload Region of Interest (KML/GeoPackage/GeoJson)')
+st.sidebar.text('2. Enter the EPSG Code for you ROI (e.g., EPSG:32644) - Only Projected CRS')
+st.sidebar.text('2. Select the Date Range (Start Date and End Date))')
+st.sidebar.text('3. Download your Final File (GeoJSON)')
 
 roi = st.file_uploader(
     label = 'Upload Your File Here!',
@@ -265,6 +245,7 @@ if roi is not None:
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
 
 
