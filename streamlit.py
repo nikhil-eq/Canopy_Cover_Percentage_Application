@@ -21,6 +21,8 @@ import streamlit as st
 
 logo_url = 'https://github.com/nikhil-atharv/Canopy_Cover_Percentage_Application/blob/main/logo.png'
 
+st.sidebar.image("logo.png", use_column_width=True)
+
 st.markdown(
     f"""
     <style>
@@ -263,6 +265,7 @@ if roi is not None:
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
 
 
