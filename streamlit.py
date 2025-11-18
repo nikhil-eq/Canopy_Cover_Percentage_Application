@@ -19,7 +19,7 @@ from matplotlib.ticker import MaxNLocator
 
 import streamlit as st
 
-logo_url = "logo.png"
+logo_url = 'https://github.com/nikhil-atharv/Canopy_Cover_Percentage_Application/blob/main/logo.png'
 
 st.markdown(
     f"""
@@ -263,6 +263,7 @@ if roi is not None:
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
 
 
