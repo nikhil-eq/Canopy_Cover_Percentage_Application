@@ -1,3 +1,4 @@
+pip
 planetary-computer
 pystac-client
 rasterio
