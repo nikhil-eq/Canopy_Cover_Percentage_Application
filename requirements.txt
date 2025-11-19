@@ -20,5 +20,5 @@ localtileserver
 setuptools
 streamlit_folium
 psutil
-jupter-server-proxy
+jupyter-server-proxy
 lonboard
