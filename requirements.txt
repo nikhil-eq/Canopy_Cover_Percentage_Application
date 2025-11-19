@@ -13,3 +13,11 @@ numpy
 scipy
 streamlit
 datetime
+leafmap
+pydeck
+localtileserver
+setuptools
+streamlit_folium
+psutil
+jupter-server-proxy
+lonboard
